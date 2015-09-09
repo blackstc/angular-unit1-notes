@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <meta charset="utf-8">
+  <title>Data binding on dropdown</title>
+</head>
+<body>
+  <h3>I love {{ animal }} &lt3!</h3>
+  <br>
+  <select ng-model="animal">
+    <option value="dogs">Dogs</option>
+    <option value="cats">Cats</option>
+    <option value="dogs and cats">Dogs and Cats</option>
+    <option value="niether">Niether</option>
+  </select>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
+</body>
+</html>
