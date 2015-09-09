@@ -21,10 +21,64 @@
     </select> -->
 
     <!-- YELLING WHISPERING -->
-    <h2>Please say something</h2><br>
+    <!-- <h2>Please say something</h2><br>
     <input type="text" ng-model="sentence"><br>
-    <p>Yelling: {{ sentence | uppercase}}</p>
-    <p>Whispering: {{ sentence | lowercase }}</p>
+    <p>Yelling: <strong>{{ sentence | uppercase}}</strong></p>
+    <p>Whispering: {{ sentence | lowercase }}</p> -->
+
+    <!-- DIGITS OF PI -->
+    <!-- <h4>How many digits of pi do you want?</h4>
+    <select ng-model="digit">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+    </select><br>
+    <h4 ng-model="digit">Here you go! The first
+      <ng-pluralize count="digit" when="{'1': 'digit', 'other': '{} digits'}"></ng-pluralize> pi!</h4><br>
+    <h4> {{ 3.14159265359 | number: digit }}</h4> -->
+
+    <!-- TIP CALCULATOR -->
+    <!-- <h2>Super Useful Tip Calculator</h2>
+    <p>How much did your meal cost?<input type="number" ng-model="mealPrice"></p>
+    <p>How much do you want to tip?</p>
+    <select ng-model="tipAmount">
+      <option value="0.10">10%</option>
+      <option value="0.15">15%</option>
+      <option value="0.20">20%</option>
+    </select>
+
+    <h3>Subtotal: {{ mealPrice | currency}}</h3>
+    <h3>Tip: {{ mealPrice * tipAmount | currency }}</h3> -->
+
+    <!-- ANGULAR EXPERSSION CONTEXT -->
+    <!-- <button ng-click="window.alert('should not see')">Should Not See Alert</button> -->
+
+    <!-- MAD LIBS APP -->
+    <!-- <h2>Please fill out the following!</h2>
+    <hr><br>
+    <h5>Boy's Name</h5>
+    <input type="text" ng-model="name" placeholder="Enter a boy's name"><br>
+    <h5>Adjective</h5>
+    <input type="text" ng-model="adjective" placeholder="Enter a adjective"><br>
+    <h5>Plural Noun</h5>
+    <input type="text" ng-model="plural1" placeholder="Enter a plural noun"><br>
+    <h5>An insect, plural</h5>
+    <input type="text" ng-model="insect" placeholder="Enter an insect, plural"><br>
+    <h5>Plural Noun</h5>
+    <input type="text" ng-model="plural2" placeholder="Enter a plural noun"><br>
+    <h5>A verb ending in "s"</h5>
+    <input type="text" ng-model="verb" placeholder="Enter a verb ending in 's'"><br>
+
+    <h2>Mad with the Libs</h2>
+    <hr><br>
+    <p> I'm in love with {{ name | uppercase }}. He's so {{ adjective | uppercase }}.</p>
+    <p>He has big flat {{ plural1 | uppercase }}, and when our {{ insect | uppercase }}</p>
+    <p>meet, I get {{ plural2 | uppercase }} in my stomach. I've</p>
+    <p>fallen for him like a ton of {{ verb | uppercase }}.</p> -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
   </body>
 </html>
